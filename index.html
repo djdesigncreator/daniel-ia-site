@@ -451,7 +451,7 @@
     <div class="estudio rv" id="estudio">
       <div class="estudio-barra">
         <div class="bolas" aria-hidden="true"><i></i><i></i><i></i></div>
-        <div class="estudio-url"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg><span id="est-url">gestao-sol.daniel-ia.pro</span></div>
+        <div class="estudio-url"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg><span id="est-url">apps.daniel-ia.pro/gestao-sol</span></div>
         <div class="estudio-abas" aria-hidden="true"><span class="on">Pré-visualizar</span><span>Dados</span><span>Pessoas</span></div>
       </div>
       <div class="estudio-corpo">
@@ -541,6 +541,7 @@
             <li>Contas com código por email, admin e membros</li>
             <li>Mudas a app por conversa, sem perder dados</li>
             <li>Escolhes o modelo: Claude Sonnet ou Claude Opus</li>
+            <li>Link curto (apps.daniel-ia.pro/a-tua-app) e o código fonte é teu</li>
           </ul>
           <a href="https://app.daniel-ia.pro/" class="btn btn-lima" id="btn-pilar-app">Criar um aplicativo<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
@@ -629,8 +630,8 @@
   <div class="wrap">
     <div class="sec-cab rv">
       <div class="eti">Inspiração</div>
-      <h2 class="sec-tit">O que os nossos clientes estão a criar</h2>
-      <p class="sec-sub">Toca num exemplo para o levar para a caixa lá em cima.</p>
+      <h2 class="sec-tit">Ideias para começar</h2>
+      <p class="sec-sub">Exemplos do que podes criar. Toca num para o levar para a caixa lá em cima e ajusta ao teu negócio.</p>
     </div>
     <div class="exemplos" id="exemplos"></div>
   </div>
@@ -706,6 +707,8 @@
       <details><summary>Qual é a diferença entre um site, uma loja e um aplicativo?</summary><p>O site apresenta o teu negócio. A loja vende produtos com carrinho e pagamento. O aplicativo é uma ferramenta de trabalho com base de dados e contas: registar vendas, alunos, reservas ou entregas, com cada pessoa a ver só o que lhe cabe.</p></details>
       <details><summary>O que são os tokens?</summary><p>São a medida do trabalho da IA. Cada plano traz tokens por mês e, nos planos pagos, podes recarregar quando acabarem. No fim de cada criação mostramos quanto foi gasto.</p></details>
       <details><summary>Sonnet ou Opus: qual escolho?</summary><p>Para a maioria das apps, o Claude Sonnet 5.5 (o padrão) chega e gasta menos. O Claude Opus 5.5 dá mais capacidade para apps grandes e complexas, mas gasta cerca do dobro dos tokens. Podes trocar em cada pedido.</p></details>
+      <details><summary>O código das apps é meu?</summary><p>Sim. Em cada app descarregas o código fonte completo (um projecto React pronto a correr) e podes publicá-lo onde quiseres. Os dados e as contas continuam guardados na Daniel IA.</p></details>
+      <details><summary>Já tenho uma base de dados. Posso usá-la?</summary><p>Sim, nos planos pagos. Ligas o teu Supabase ou Postgres, escolhes as tabelas e a IA cria a app por cima dos teus dados. MySQL, API REST e Google Sheets chegam em breve.</p></details>
       <details><summary>Posso usar o meu próprio domínio?</summary><p>Sim, a partir do plano Starter. Ligamos o teu domínio ao teu site ou loja.</p></details>
     </div>
   </div>
@@ -815,7 +818,7 @@
 
   // ---- estúdio: a plataforma a construir, em ciclo ----
   var CENAS = [
-    { c: 'app', url: 'gestao-sol.daniel-ia.pro', eu: 'Quero uma app para a minha loja: clientes, produtos com stock e vendas por M-Pesa. Os funcionários registam, só eu vejo os relatórios.', ia: '<b>Combinado.</b> Vou criar 4 tabelas, contas com código por email e 5 ecrãs.', passos: ['Planear tabelas e ecrãs', 'Criar a base de dados', 'Escrever os ecrãs', 'Publicar'] },
+    { c: 'app', url: 'apps.daniel-ia.pro/gestao-sol', eu: 'Quero uma app para a minha loja: clientes, produtos com stock e vendas por M-Pesa. Os funcionários registam, só eu vejo os relatórios.', ia: '<b>Combinado.</b> Vou criar 4 tabelas, contas com código por email e 5 ecrãs.', passos: ['Planear tabelas e ecrãs', 'Criar a base de dados', 'Escrever os ecrãs', 'Publicar'] },
     { c: 'loja', url: 'kapulana.co.mz', eu: 'Uma loja de capulanas e vestidos, com categorias, tamanhos e pagamento por M-Pesa e cartão.', ia: '<b>Feito o plano.</b> Catálogo, carrinho e checkout com 4 métodos de pagamento.', passos: ['Escolher o estilo', 'Escrever os textos', 'Montar o catálogo', 'Activar pagamentos'] },
     { c: 'site', url: 'clinicavida.co.mz', eu: 'Um site para a minha clínica na Matola, com serviços, equipa e marcação de consultas.', ia: '<b>Entendido.</b> Página de clínica com serviços, equipa e marcação online.', passos: ['Escolher o estilo', 'Escrever os textos', 'Montar as secções', 'Publicar'] }
   ];
